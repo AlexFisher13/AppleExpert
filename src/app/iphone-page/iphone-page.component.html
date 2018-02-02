@@ -1,9 +1,7 @@
 <div class="container main-info">
   <div class="row">
-    <iphone-card></iphone-card>
-    <iphone-card></iphone-card>
-    <iphone-card></iphone-card>
-    <iphone-card></iphone-card>
+    <iphone-card *ngFor="let i of iphones"
+    [iphone]="i"></iphone-card>
   </div>
 </div>
 
